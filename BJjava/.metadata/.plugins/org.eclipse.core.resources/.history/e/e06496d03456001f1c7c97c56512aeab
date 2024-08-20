@@ -1,0 +1,79 @@
+package 백준자바;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        // 구간 합 구하기 11659번
+        
+        // 첫재줄에 숫자의 개수 N과 합을 구해야 하는 횟수 M이 공백을 구분으로 주어진다
+        StringTokenizer NandM = new StringTokenizer(bf.readLine(), " ");
+        
+        // 공백을 기준으로 N과 M을 나누고 변수에 저장한다.
+        int N = Integer.parseInt(NandM.nextToken());
+        int M = Integer.parseInt(NandM.nextToken());
+        
+        // 둘째줄에 숫자들이 공백을 기준으로 주어진다
+        StringTokenizer numStr = new StringTokenizer(bf.readLine(), " ");
+        
+ 
+        // 숫자를 담을 리스트를 크기를 정해서 선언한다
+        int tokenNum = numStr.countTokens()
+        int[] numli = new int[tokenNum];
+        System.out.println(numli.length);
+        
+        // 반복문을 통해 int 리스트를 채운다
+        for(int i = 0; i<tokenNum; i++) {
+        	numli[i] = Integer.parseInt(numStr.nextToken());
+        }
+        
+        for(int i=0; i<numli.length; i++) {
+        	System.out.println(numli[i]);
+        }
+        
+        
+        // 셋째줄부터는 더할 구간의 범위를 공백을 기준으로 M줄에 걸쳐 주어진다.
+        for(int i = 0; i<M; i++) {
+        	
+            // 공백을 기준으로 나누어 슬라이싱 범위를 입력받는다.
+        	StringTokenizer iStr = new StringTokenizer(bf.readLine(), " ");
+            int[] index = new int[iStr.countTokens()];
+            
+
+            
+            // 숫자로 변환
+            index[0] = Integer.parseInt(iStr.nextToken());
+            index[1] = Integer.parseInt(iStr.nextToken());
+            
+
+            
+            int sum = 0;
+            
+            for(int j = index[0]-1; j<index[1]; j++) {
+            	sum += numli[j];
+            }
+            bw.write(sum+"\n");   //버퍼에 있는 값 전부 출력
+            bw.flush();   //남아있는 데이터를 모두 출력시킴
+            
+            
+        }
+        
+        bw.close();   //스트림을 닫음
+        
+        
+        
+        
+        // BufferedReader 닫기
+        bf.close();
+    }
+}

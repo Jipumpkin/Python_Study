@@ -1,0 +1,11 @@
+package person;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 설계도를 사용하는것
+		
+
+	}
+
+}

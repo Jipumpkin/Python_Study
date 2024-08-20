@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+
+    <h1 id="text">스타일 변경</h1>
+
+    <button onclick="changeCss()">스타일변경</button>
+
+    <button id="btn">리스너방식</button>
+
+
+
+    <script>
+        //일반적 사고 -> 버튼을 클릭하면 h1태그의 글자 색을 적색으로 변경
+
+        const changeCss = () => {
+            let h1 = document.getElementById("text");
+            h1.style.color= "red";
+            setTimeout(() => {
+                h1.style.color= "orange";
+            }, 250);
+            setTimeout(() => {
+                h1.style.color= "yellow";
+            }, 500);
+            setTimeout(() => {
+                h1.style.color= "green";
+            }, 750);
+            setTimeout(() => {
+                h1.style.color= "blue";
+            }, 1000);
+            setTimeout(() => {
+                h1.style.color= "indigo";
+            }, 1250);
+            setTimeout(() => {
+                h1.style.color= "purple";
+            }, 1500);
+            
+            
+        }
+
+        // 스타일을 제어할 때 기억할점
+        // 1. 스타일을 제어할 떄는 style.디자인코드 = "값";
+        // 2. 권장되지 않는 방식이며 단순한 스타일 제어에만 사용한다.
+        // -> 태그안에 인라인방식으로 스타일이 작성되기 때문에
+        // 현업에서는 class를 변경하는 방식으로 코드를 작성한다.
+
+
+        // 이벤트 리스너 방식으로 2번째 버튼에게 이벤트 연결하기
+        // 1.태그를 조사 2.태그에게 이벤트 리스너 연결 3. 이벤트의 종류와 함수를 연결
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener("click",changeCss)
+
+    </script>
+    
+</body>
+</html>

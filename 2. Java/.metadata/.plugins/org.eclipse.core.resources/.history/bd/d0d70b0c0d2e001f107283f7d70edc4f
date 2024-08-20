@@ -1,0 +1,19 @@
+package 동물;
+
+public class Animal {
+	String Gender;
+	
+	public void eat() {
+		System.out.println("쿰척");
+		
+	}
+	public void sleep() {
+		System.out.println("드르렁");
+	}
+//	public void move() {
+//		System.out.println("쿵쿵");
+//	}
+	
+	// 바디가 없는 메서드(추상화) 만들기
+	public void move();
+}

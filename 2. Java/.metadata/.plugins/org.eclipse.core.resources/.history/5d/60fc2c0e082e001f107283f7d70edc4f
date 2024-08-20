@@ -1,0 +1,21 @@
+package 동물;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Penguin p1 = new Penguin();
+		
+		// 업캐스팅 (Upcasting)
+		Animal a1 = p1; // p1은 자료형이 Penguin
+		
+		
+		
+		// 다운캐스팅
+		
+		
+		
+		
+	}
+
+}

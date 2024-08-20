@@ -1,0 +1,20 @@
+package 학생;
+
+public class Student {
+	
+	String name;
+	String number;
+	int age;
+	int socreJava;
+	int socreWeb;
+	int scoreAndroid;
+	
+	public Student {
+		
+	}
+	
+	
+	
+	
+	
+}

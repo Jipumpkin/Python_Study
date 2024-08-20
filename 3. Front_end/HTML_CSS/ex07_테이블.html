@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    표, 테이블을 생성하기 위한 태그 -> table (표의 틀을 만들어줌)
+    행, 열, 데이터(내용), 
+    -->
+
+    <!-- 
+    테이블을 구성하는 필수 요소
+    1) 행을 만들어주는 tr태그 (table row) 여러개 행 구성할때 tr*숫자 enter하면 생성해줌
+    -->
+    <table border="2px solid red"> <!--테두리: 선의두꼐 선의종류 선의색상-->
+        <tr bgcolor = "purple">
+            <th>이름</th>
+            <th>성별</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>박병관</td>
+            <td>남자</td>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <td>최영화</td>
+            <td>여자</td>
+            <td>광주</td>
+        </tr>
+        <tr>
+            <td align="center">모란</td>
+            <td>여자</td>
+            <td>광주</td>
+        </tr>
+
+
+
+    </table>
+
+    <!-- 테이블 병합하는 방법 -->
+    <br>
+
+    <table border="2px solid red"> <!--테두리: 선의두꼐 선의종류 선의색상-->
+        <tr bgcolor = "purple">
+            <th>이름</th>
+            <th>성별</th>
+            <th>주소</th>
+            <th>직업</th>
+        </tr>
+        <tr>
+            <td>박병관</td>
+            <td>남자</td>
+            <td>서울</td>
+            <td rowspan="2">선생님</td>
+        </tr>
+        <tr>
+            <td>최영화</td>
+            <td>여자</td>
+            <td>광주</td>
+        </tr>
+        <tr>
+            <td align="center">모란</td>
+            <td>여자</td>
+            <td>광주</td>
+            <td align="center">학생</td>
+        </tr>
+        
+
+
+
+    </table>
+
+
+    <br>
+
+    <table border="2px solid red"> <!--테두리: 선의두꼐 선의종류 선의색상-->
+        <tr bgcolor = "purple">
+            <th>이름</th>
+            <th colspan="2">성별, 주소</th>
+            <th>직업</th>
+        </tr>
+        <tr>
+            <td>박병관</td>
+            <td>남자</td>
+            <td>서울</td>
+            <td rowspan="2">선생님</td>
+        </tr>
+        <tr>
+            <td>최영화</td>
+            <td>여자</td>
+            <td>광주</td>
+        </tr>
+        <tr>
+            <td align="center">모란</td>
+            <td>여자</td>
+            <td>광주</td>
+            <td align="center">학생</td>
+        </tr>
+        
+
+
+
+    </table>
+
+    <br>
+
+    <table border="1px solid red">
+        <tr bgcolor="gray" align="center">
+            
+            <td rowspan="2"><b>연도</b></td>
+            <td colspan="2"><b>순위</b></td>
+            <td rowspan="2"><b>경기</b></td>
+        </tr>
+        <tr bgcolor="gray" align="center">
+            <td><b>종합</b></td>
+            <td><b>정규</b></td>
+        </tr>
+        <tr align="center">
+            <td>1982</td>
+            <td><b>4</b></td>
+            <td>4</td>
+            <td>80</td>
+        </tr>
+        <tr bgcolor="#ffd700" align="center">
+            <td>1983</td>
+            <td><b>1</b></td>
+            <td>2<br>(전기리그 1위)</td>
+            <td>80</td>
+        </tr>
+        <tr align="center">
+            <td>1984</td>
+            <td><b>5</b></td>
+            <td>5</td>
+            <td>80</td>
+        </tr>
+        <tr align="center">
+            <td>1985</td>
+            <td><b>3</b></td>
+            <td>3</td>
+            <td>80</td>
+        </tr>
+    </table>\
+</body>
+</html>

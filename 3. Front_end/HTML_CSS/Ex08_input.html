@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 사용자가 회원가입 할 수 있도록 가입창을 만드는것 -> 프론트엔드 역할
+         사용자에게 입력받을때 사용하는 태그 -> input태그
+         - 입력받은 데이터를 하나로 묶어서 전달하기 위한 태그 -> form태그
+         - form태그에 작성되어야 하는 필수 속성 2가지!
+         1) action: 데이터를 "보내줄" 서버의 주소      기호# -> 미정
+         2) method: 데이터를 전송할 방법 -> get(기본방식), post
+                - get방식: url에 데이터를 담아서 보내주는 방식 (url에 정보가 노출된다.)
+                - post방식: url에 데이터를 숨겨서 보내주는 방식
+    -->
+    <form action="#", method="get">
+        아이디: <input type = "text",value ="", placeholder ="아이디는 영어로만 가능"> <br> 
+        비밀번호: <input type="password", name="pw1"> <!-- 비밀번호 노출 숨기는 태그--> <br>
+        비밀번호 확인: <input type="password", name="pw2"> <br>
+    
+    
+    <!-- 사용자에게 입력을 받을 때 텍스트,숫자가 아닌 클릭을 통해서 입력받는방법
+        1) 체크박스: 중복선택이 가능한 속성
+        2) 라디오 : 중복선택이 불가능
+        * 체크박스는 반드시 name, value속성을 입력해야됨
+        * name = 입력받은 데이터가 같은 그룹임을 명시 -> 속성을 통해 묶어줌
+        * value = 실제 선택한 데이터의 값 (태그 안에 값을 포함시켜서 전송)
+
+    -->
+    취미:
+        축구<input type="checkbox", name="hobby", value="축구">
+        야구 <input type="checkbox", name="hobby", value="야구">
+
+    <br>
+
+    성별:
+        남자<input type="radio", name="gender", value="남자">
+        여자 <input type="radio", name="gender" value="여자">
+        
+        <!-- 가끔 사용하는 인풋
+            -->
+            <input type="file"> <br> <!-- 파일을 업로드하는 인풋 태그-->
+            <input type="range"> <br> <!-- 범위 입력 -->
+            <input type="color"> <br> <!--색입력받기-->
+            <input type="date"> <br> <!--날짜입력-->
+            <input type="datetime-local"> <br>
+    <!-- 리스트형태로 데이터를 제공해서 사용자가 선택할수 있게끔 -> select
+      -->
+        <select name="mail">
+            <option value="naver.com">naver.com</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="daum.net">daum.net</option>
+        </select>
+        <br>
+
+    <!-- 사용자에게 많은 양의 글자를 입력받는 공간 -->
+        <textarea></textarea>
+
+        <br>
+    <input type="submit"> <!--입력폼에서 반드시 제출해야한다. 버튼 생성 필수(정보생성)-->
+    <input type="reset">
+
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+package 저금통;
+
+public class PiggyBank {
+
+	int money;
+	
+	
+	public void deposit(int a) {
+		money += a;
+		System.out.println(a+"원 저금 완료");
+	}
+	public void withdraw(int a) {
+		money -= a;
+		System.out.println(a+"원 인출 완료");
+		
+	}
+	public void showMoney() {
+		System.out.println("잔액 : "+money+"원");
+	}
+}

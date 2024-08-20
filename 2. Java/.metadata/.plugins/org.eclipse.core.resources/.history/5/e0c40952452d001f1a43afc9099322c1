@@ -1,0 +1,23 @@
+package 마우스;
+
+public class WheelMouse {
+	// 우클릭
+	public void rightClick() {
+		System.out.println("우클릭 뚝스");
+	}
+	
+	public void leftClick() {
+		System.out.println("좌클릭 딱스");
+	}
+	
+	public void drag() {
+		System.out.println("드래그 드륵");
+	}
+	
+	// + 스크롤하는 기능 (휠마우스만 가진 기능)
+	public void scroll() {
+		System.out.println("스크롤 스륵");
+	}
+	
+	
+}

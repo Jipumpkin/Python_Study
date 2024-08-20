@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이미지를 가져올수 있는 태그 -> img 태그
+    필수속성
+    1) src : 이미지 파일의 경로를 작성
+    2) alt : 시각장애인용 스크린리더로 읽을 때 읽어줄 이미지에 대한 설명
+             이미지가 없는 경우 대체 텍스트로도 사용됨
+    -->
+
+    <!-- 이미지를 불러오는 2가지 방법
+     1) 내가 가진 로컬 파일을 불러오는 방법
+     2) 네트워크를 통해 다른 sever에 저장된 데이터(이미지)를 불러오는법 _CDN(content dilivery network)
+        CDN 방식의 장점: 메모리를 차지하지않음 & 코드공유시 이미지 안보내도됨
+        CDN 방식의 단점: 원본자가 이미지 삭제 시 사용불가해짐 & 인터넷 안되면 사용 못함
+        로컬 -> 혼자개발할때 사용 CDN -> 협업, 소스공개시 사용
+     -->
+
+    <img src="pepe.png", alt = "개구리">
+    <img src="image.png", alt = "웃는 개구리">
+    <img src="image.png", alt = "웃는 개구리">
+    <img src="pepe.png", alt = "개구리">
+    <img src="pepe.pn?g", alt = "개구리">
+    <img src="image.pn?g", alt = "웃는 개구리">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMAgx4CT1c-5xZMHgJuPxeu_9_8uAZRUDgKOAMpyWGlPXtQApQl5lOuMVuA&s", alt = " 필굿 개구리">
+
+
+    <!-- 이미지를 불러올때는 반드시 정확한 경로, 파일명, 확장자 인지 확인해야됨 -->
+
+    <!-- 파일을 불러오는 경로 2가지 
+
+    1) 상대경로 : 내가 현재 작업중인 파일을 기준으로 데이터에 접근하여 불러오는 방식
+        - 경로/파일명.확장자
+        - 폴더를 들어갈때는 / 슬래시를 사용한다.
+        - 폴더에서 나올때는 ../ 기호를 사용한다.
+        - 최상위폴더(root) (여기선 HTML_CSS폴더) 는 맨앞에 / 쓰면된다
+        - 나를 기준으로 같은 위치에 있는 파일은 바로 파일명을 작성하면 된다
+    2) 절대경로 : 누구나 똑같은 주소로 똑같은 결과가 나오는 경로 (url)
+
+    -->
+
+    <img src="imege/super pepe.jpg", alt = "super pepe">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<!-- imege폴더 안에 서로 다른 이미지 3장 저장
+img1, img2, img3
+-->

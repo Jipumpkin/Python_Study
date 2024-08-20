@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블루웨이브 - 청년 정책 플랫폼</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .policy-recommendations, .community-proposals {
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #1e90ff;
+        }
+        .cta-button {
+            background-color: #4169e1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>블루웨이브</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">정책 탐색</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">내 정보</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="policy-recommendations">
+                <h2>추천 청년 정책</h2>
+                <!-- 여기에 추천 정책 목록 추가 -->
+                <ul>
+                    <li>청년 주거 지원 정책</li>
+                    <li>취업 지원 프로그램</li>
+                    <li>청년 창업 지원금</li>
+                </ul>
+                <button class="cta-button">더 많은 정책 보기</button>
+            </section>
+
+            <section class="community-proposals">
+                <h2>커뮤니티 정책 제안</h2>
+                <!-- 여기에 투표로 선정된 정책 목록 추가 -->
+                <ul>
+                    <li>청년 문화 바우처 확대 (투표수: 1,234)</li>
+                    <li>대학생 학자금 대출 이자 감면 (투표수: 987)</li>
+                    <li>청년 건강검진 지원 확대 (투표수: 765)</li>
+                </ul>
+                <button class="cta-button">정책 제안하기</button>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

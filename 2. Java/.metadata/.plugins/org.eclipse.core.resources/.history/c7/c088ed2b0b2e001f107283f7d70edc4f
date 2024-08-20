@@ -1,0 +1,25 @@
+package 동물;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Penguin p1 = new Penguin();
+		
+		// 업캐스팅 (Upcasting)
+		Animal a1 = p1; // p1은 자료형이 Penguin
+		//자동형변환과 비슷한 개념
+		// p1 : 성별, 밥을먹는다, 잔다, 헤엄친다, 알을낳는다
+		a1.move();
+		// 1) 오버라이딩된 메서드는 자식 클래스에 있던것이 실행된다.
+		// 2) 고유하게 가지고 있는 메서는 사용할수 없게 된다.
+		
+		
+		// 다운캐스팅
+		
+		
+		
+		
+	}
+
+}

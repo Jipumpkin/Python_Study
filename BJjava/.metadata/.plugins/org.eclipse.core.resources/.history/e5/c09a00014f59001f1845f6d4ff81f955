@@ -1,0 +1,67 @@
+package 백준자바;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+
+        // 정사각형의 모음에서 점의 갯수를 반환하는 프로그램
+        
+        // 초기 4개
+        // 1차 9개
+        // 2차 25개
+        
+        
+        // 초기상태의 사각형은 1개
+        // n번 거듭할수록 사각형의 갯수는 4배로 증가한다.
+        
+        // 초기상태의 사각형에서 1차로 넘어갈때 점의 갯수가 5개가 증가한다. 이때 사각형은 4개
+        // 2차로 넘어갈때는 갯수가 5*4(사각형의 갯수)만큼 증가하는데, 여기서 사각형의 갯수만큼 점의갯수가 중복된다. 따라서 5*4-4
+        
+        
+        // 행렬개념으로 접근
+        
+        // 사각형의 갯수 S 만큼 S+1행 S+1열의 이차원배열이 만들어진다.
+        // 해당 이차원배열의 요소의 갯수를 구하면 된다
+        
+        
+        
+        // 테스트케이스 N 입력
+        int N = Integer.parseInt(bf.readLine());
+        
+        
+        
+        double square = Math.pow(4,N);
+        
+        System.out.println(square);
+
+//        int[][] result = new int[][];
+        	
+        
+        	
+        	
+        	
+        	
+        	
+        
+        
+        
+        
+        
+        
+//        bw.flush();   // 버퍼의 데이터를 모두 출력
+
+        
+        bw.close();   // BufferedWriter 닫음
+        bf.close();   // BufferedReader 닫기
+    }
+}

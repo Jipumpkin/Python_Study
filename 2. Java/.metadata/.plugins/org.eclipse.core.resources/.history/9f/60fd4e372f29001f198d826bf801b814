@@ -1,0 +1,20 @@
+package 사람;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Person person1 = new Person();
+		
+		person1.setAge(20);
+		person1.setName("박지호");
+		
+		Person person2 = new Person("김희은", 25 );
+		
+		person1.show();
+		person2.show();
+		
+
+	}
+
+}
