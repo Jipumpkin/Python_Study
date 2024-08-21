@@ -1,8 +1,0 @@
-package 동물;
-
-public class whale extends Mammal {
-	
-	public void move() {
-		System.out.println("쿵쾅쿵쾅");
-	}
-}

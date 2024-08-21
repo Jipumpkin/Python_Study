@@ -1,5 +1,0 @@
-package 동물;
-
-public abstract class reptile extends Animal {
-
-}
